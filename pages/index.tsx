@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Layout from "../layout/Layout"
+import styled from 'styled-components';
+import Layout from '../layout/Layout';
 
 const Title = styled.h1`
   color: red;

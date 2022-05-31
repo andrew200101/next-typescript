@@ -38,7 +38,7 @@ const ActiveLink = ({ targetRoute, children, fontSize }: ActiveLinkProps) => {
       currentRoute={router.asPath}
       targetRoute={targetRoute}
       onClick={handleClick}
-      fontSize={fontSize}
+      fontSize={fontSize!}
     >
       {children}
     </Link>

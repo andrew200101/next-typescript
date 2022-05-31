@@ -6,7 +6,8 @@ type ContentContainerProps = React.PropsWithChildren<{
 const ContentContainer = styled.div<ContentContainerProps>`
   margin-top: ${(props) => props.navbarHeight}px;
   width: 100%;
-  position: absolute;
+  position: relative;
+  min-height: 200vh;
 `;
 
 export const Content = ({ navbarHeight, children }: ContentContainerProps) => {

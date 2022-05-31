@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import breakpoints from './Breakpoint';
 import { Color } from './Color';
+import { size } from './Device';
 import {
   Font,
   FontSize,
@@ -13,7 +13,9 @@ import {
 export const theme: any = {
   space: [0, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 84, 96],
   radii: [0, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 84, 96],
-  breakpoints,
+  size: {
+    ...size,
+  },
   fonts: Font.roboto,
   fontSizes: {
     ...FontSize,
@@ -41,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     // this is the shared style
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body {

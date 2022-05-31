@@ -28,20 +28,23 @@ const NavbarContainer = styled.div<StyledNavbarContainerProps>`
   width: 100%;
   height: ${(props) => (props.height ? props.height : 100)}px;
   background-color: ${(props) => props.theme.colors.darkCharcoal};
+  z-index: 999;
 `;
 
 const LinkContainer = styled.div`
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  gap: 40px;
 `;
 
 const NavbarContent = styled.div`
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 `;
 
 const AutoMargin = styled(({ component, ...props }) =>

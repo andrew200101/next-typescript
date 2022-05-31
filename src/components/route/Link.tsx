@@ -30,7 +30,7 @@ const ActiveLink = ({ targetRoute, children, fontSize }: ActiveLinkProps) => {
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
-    router.replace({ pathname: targetRoute });
+    router.push({ pathname: targetRoute });
   };
 
   return (

@@ -45,7 +45,7 @@ const StyledFooterColumn = styled.div`
   width: 250px;
 `;
 
-const Footer = ({ height, logo, logoWidth, routes }: FooterProps) => {
+const Footer = ({ height, logo, logoWidth }: FooterProps) => {
   const router = useRouter();
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
